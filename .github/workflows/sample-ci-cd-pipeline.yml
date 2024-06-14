@@ -31,4 +31,5 @@ jobs:
       - name: serve application
         run: |
           cd react-redux-realworld-example-app
+          npm install --save-dev cross-env
           npm start 
