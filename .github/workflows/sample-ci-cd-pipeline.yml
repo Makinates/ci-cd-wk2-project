@@ -23,7 +23,7 @@ jobs:
       - name: Build 
         run: |
           cd react-redux-realworld-example-app
-          npm run build --if-present
+          npm run 
       - name: Test 
         run: |
           cd react-redux-realworld-example-app
