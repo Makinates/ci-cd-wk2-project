@@ -96,4 +96,12 @@ Build Job
     - **Run tests:** Runs `npm test` to execute tests. 
     - **Build application:** Runs `npm run build` to build the application. 
 
- 
+**Deploy Job** 
+- **Needs:** Specifies that this job depends on the `build` job.
+- **run-on:** Specifies the type of runnerto use.
+- **if:** Conditions to run this job only on the `main` branch.
+- **steps:** A list of steps to run in the job:
+    - **Checkout code:** Uses the `action/checkout` action to checkout the repositiry code. 
+    - **Set uo Node.js:** Uses the `action/setuo-node` action to set up Node.js.
+    - **Install dependencies:** Run `npm install` to install Node.js dependencies. 
+      
