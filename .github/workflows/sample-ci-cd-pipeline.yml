@@ -28,3 +28,7 @@ jobs:
         run: |
           cd react-redux-realworld-example-app
           npm test  
+      - name: serve application
+        run: |
+          cd react-redux-realworld-example-app/src
+          node index.js 
